@@ -1,0 +1,262 @@
+/* SLIDER */
+body {
+	background: #eee;
+	font-family: arial, helvetica, sans-serif;
+	margin: 50px auto;
+	padding: 0;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#wrapper {
+  perspective: 2500;
+	-webkit-perspective: 2500;
+	width: 800px;
+	margin: 200px auto 0 auto;
+  perspective-origin: 50% 150px;
+	-webkit-perspective-origin: 50% 150px;
+  transition: perspective, 1s;
+  -o-transition: -o-perspective, 1s;
+  -moz-transition: -moz-perspective, 1s;
+	-webkit-transition: -webkit-perspective, 1s;
+}
+
+#image:hover {
+  animation-play-state:paused;
+  -o-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+
+
+@-webkit-keyframes spin {
+	from {
+    transform: rotateY(0);
+    -o-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+		-webkit-transform: rotateY(0);
+	}
+	to {
+    transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+		-webkit-transform: rotateY(-360deg);
+	}
+}
+
+#image {
+	margin: 0 auto;
+	height: 400px;
+	width: 400px;
+  transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+  animation: spin 24s infinite linear;
+  -moz-animation: spin 24s infinite linear;
+  -o-animation: spin 24s infinite linear;
+	-webkit-animation: spin 24s infinite linear;
+}
+
+.image {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 15em;
+	color: #fff;
+}
+
+#image > .i1 {
+  background: #f58282;
+  transform: translateZ(485px);
+  -moz-transform: translateZ(485px);
+  -o-transform: translateZ(485px);
+  -ms-transform: translateZ(485px);
+  -webkit-transform: translateZ(485px);
+}
+#image > .i2 {
+    background: #ffb87d;
+  transform: rotateY(45deg) translateZ(485px);
+  -moz-transform: rotateY(45deg) translateZ(485px);
+  -o-transform: rotateY(45deg) translateZ(485px);
+  -ms-transform: rotateY(45deg) translateZ(485px);
+  -webkit-transform: rotateY(45deg) translateZ(485px);
+}
+#image > .i3 {
+  background: #fde17a;
+  transform: rotateY(90deg) translateZ(485px);
+  -moz-transform: rotateY(90deg) translateZ(485px);
+  -o-transform: rotateY(90deg) translateZ(485px);
+  -ms-transform: rotateY(90deg) translateZ(485px);
+  -webkit-transform: rotateY(90deg) translateZ(485px);
+}
+#image > .i4 {
+  background: #b4f580;
+  transform: rotateY(135deg) translateZ(485px);
+  -moz-transform: rotateY(135deg) translateZ(485px);
+  -o-transform: rotateY(135deg) translateZ(485px);
+  -ms-transform: rotateY(135deg) translateZ(485px);
+  -webkit-transform: rotateY(135deg) translateZ(485px);
+}
+#image > .i5 {
+  background: #83bcfd;
+  transform: rotateY(180deg) translateZ(485px);
+  -moz-transform: rotateY(180deg) translateZ(485px);
+  -o-transform: rotateY(180deg) translateZ(485px);
+  -ms-transform: rotateY(180deg) translateZ(485px);
+  -webkit-transform: rotateY(180deg) translateZ(485px);
+}
+#image > .i6 {
+  background: #bc79ed;
+  transform: rotateY(225deg) translateZ(485px);
+  -moz-transform: rotateY(225deg) translateZ(485px);
+  -o-transform: rotateY(225deg) translateZ(485px);
+  -ms-transform: rotateY(225deg) translateZ(485px);
+  -webkit-transform: rotateY(225deg) translateZ(485px);
+}
+#image > .i7 {
+  background: #f078f0;
+  transform: rotateY(270deg) translateZ(485px);
+  -moz-transform: rotateY(270deg) translateZ(485px);
+  -o-transform: rotateY(270deg) translateZ(485px);
+  -ms-transform: rotateY(270deg) translateZ(485px);
+  -webkit-transform: rotateY(270deg) translateZ(485px);
+}
+#image > .i8 {
+  background-color: #9ff9fc;
+  transform: rotateY(315deg) translateZ(485px);
+  -moz-transform: rotateY(315deg) translateZ(485px);
+  -o-transform: rotateY(315deg) translateZ(485px);
+  -ms-transform: rotateY(315deg) translateZ(485px);
+  -webkit-transform: rotateY(315deg) translateZ(485px);
+}
+#image > .i9 {
+  background-color: #9fc7fc;
+  transform: rotateY(360deg) translateZ(485px);
+  -moz-transform: rotateY(360deg) translateZ(485px);
+  -o-transform: rotateY(360deg) translateZ(485px);
+  -ms-transform: rotateY(360deg) translateZ(485px);
+  -webkit-transform: rotateY(360deg) translateZ(485px);
+}
+#image > .i10 {
+  background-color: #75a1f3;
+  transform: rotateY(405deg) translateZ(485px);
+  -moz-transform: rotateY(405deg) translateZ(485px);
+  -o-transform: rotateY(405deg) translateZ(485px);
+  -ms-transform: rotateY(405deg) translateZ(485px);
+  -webkit-transform: rotateY(405deg) translateZ(485px);
+}
+#image > .i11 {
+  background-color: #9fa1fc;
+  transform: rotateY(450deg) translateZ(485px);
+  -moz-transform: rotateY(450deg) translateZ(485px);
+  -o-transform: rotateY(450deg) translateZ(485px);
+  -ms-transform: rotateY(450deg) translateZ(485px);
+  -webkit-transform: rotateY(450deg) translateZ(485px);
+}
+
+/* JUMBOTRON */
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#bestoftimes {
+  background-color: lightblue !important;
+}
+#newanimesw {
+  background-color: lightblue !important;
+}
+#plates{
+  background-color: lightskyblue !important;
+}
+
+/* IMAGENES */
+  .mystyle {
+    border-radius: 8px;
+    width: 292px; height: 405px;
+    max-width: 100%;
+
+  }
+
+
+.mystyle:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* LOGIN */
